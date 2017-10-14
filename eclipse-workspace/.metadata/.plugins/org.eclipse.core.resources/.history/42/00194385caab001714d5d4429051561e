@@ -1,0 +1,63 @@
+/*
+ * 
+Given a digit string, return all possible letter combinations that the number could represent.
+A mapping of digit to letters (just like on the telephone buttons) is given below.
+Input:Digit string "23"
+Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+ */
+import java.util.*;
+public class LetterCombinationPhoneNumber {
+
+	LetterCombinationPhoneNumber(int number)
+	{
+		  HashMap<Integer,String> hm=new HashMap<Integer,String>();  
+		  hm.put(2,"abc");  
+		  hm.put(3,"def");  
+		  hm.put(4,"ghi");  
+		  hm.put(5,"jkl");
+		  hm.put(6,"mno");
+		  hm.put(7,"pqrs");
+		  hm.put(8,"tuv");
+		  hm.put(9,"wxyz"); 
+		  hm.put(0,""); 
+		
+		int digitizedNumber[] = new int[10]; 
+		int i = 0; 
+		while(number != 0 )
+		{
+			digitizedNumber[i] = number % 10;
+			number = number/10;
+			i++;
+		}
+		
+		StringBuilder string = new StringBuilder();
+		int digitizedNumberIndex = 0, characterIndex = 0; 
+		print(string, digitizedNumber, digitizedNumberIndex, hm, characterIndex);
+		
+	}
+	
+	void print(StringBuilder string, int[] digitizedNumber, int digitizedNumberIndex, HashMap<Integer,String> hm, int characterIndex)
+	{
+		char[] character = new char[4];
+		character = hm.get(digitizedNumber[digitizedNumberIndex]).toCharArray();
+		
+		StringBuilder tempString = new StringBuilder();
+		
+		if (character == null || digitizedNumberIndex >= digitizedNumber.length) return; 
+		
+		tempString = string; 
+		string.append(character[characterIndex++]);
+		print(string, digitizedNumber, digitizedNumberIndex, hm, characterIndex);
+		string.append(character[characterIndex--]);
+		
+		
+		
+		
+		
+	}	
+	
+	public static void main(String[] args) {
+		int number = 23; 
+		LetterCombinationPhoneNumber letterCombo = new LetterCombinationPhoneNumber(number ); 
+	}
+}

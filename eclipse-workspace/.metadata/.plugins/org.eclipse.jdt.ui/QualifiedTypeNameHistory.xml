@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Objects"/>
+<fullyQualifiedTypeName name="java.sql.Struct"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="LinkedList.listNode"/>
+<fullyQualifiedTypeName name="BinaryTreeInOrderTraversal"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="passByValue"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="Singleton"/>
+<fullyQualifiedTypeName name="java.util.logging.Level"/>
+<fullyQualifiedTypeName name="FindLongestSubstring"/>
+<fullyQualifiedTypeName name="IsNumeric"/>
+<fullyQualifiedTypeName name="SumOfNestedInteger"/>
+<fullyQualifiedTypeName name="NestedInteger"/>
+<fullyQualifiedTypeName name="NumberOfOccurences"/>
+<fullyQualifiedTypeName name="ValidTriangleNumber"/>
+<fullyQualifiedTypeName name="PrintLevelBST"/>
+<fullyQualifiedTypeName name="ZigZagConversion"/>
+<fullyQualifiedTypeName name="ReverseInteger"/>
+<fullyQualifiedTypeName name="RegularExpressionMatching"/>
+<fullyQualifiedTypeName name="java.awt.Container"/>
+<fullyQualifiedTypeName name="ContainerWithMostWater"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="IntegerToRoman"/>
+<fullyQualifiedTypeName name="LongestStringPalindrom"/>
+<fullyQualifiedTypeName name="LongestCommonPrefix"/>
+<fullyQualifiedTypeName name="ThreeSum"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="LetterCombinationPhoneNumber"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>

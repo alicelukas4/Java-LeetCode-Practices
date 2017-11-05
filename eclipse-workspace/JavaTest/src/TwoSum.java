@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /*
  * LeetCode – Two Sum (Java)
  
@@ -15,7 +17,8 @@ public class TwoSum {
 	public TwoSum(int[] nums, int i) {
 		int[] array = new int[2]; 
 		array = TwoSum(nums, i, true); 
-		//System.out.println(array[0] +", "+ array[1]);
+		
+		array = TwoSumBetterTimeComplexity(nums, i);
 	}
 
 	public int[] TwoSum(int[] nums, int target) 
@@ -35,10 +38,34 @@ public class TwoSum {
 		
 		return array;
 	}
-	
+	//pointers method
+	public int[] TwoSumBetterTimeComplexity(int[] nums, int target) 
+	{
+		int[] arrays = new int[2]; 
+		Arrays.sort(nums);
+		int j = nums.length-1;
+		int i = 0; 
+		while(i<nums.length)
+		{
+			if(nums[i]+nums[j] == target)
+			{
+				arrays[0] = nums[i]; 
+				arrays[1] = nums[j]; 
+				System.out.println("\nPointers: "+i+ " "+ j);
+				return arrays;
+			}
+			else if (nums[i]+nums[j] > target) j--; 
+			else i++;
+		
+		}
+		
+		return arrays;
+	}
+	//hash method
 	//fail if input value > 15, duplicates, 
 	public int[] TwoSum(int[] nums, int target, boolean ON) 
 	{
+		System.out.print("Hash method: ");
 		int[] hash = new int[15]; 
 		for(int i=0; i<nums.length; i++)
 		{
@@ -46,7 +73,7 @@ public class TwoSum {
 			{
 				if(hash[target-nums[i]] >0) 
 				{
-					System.out.println(i + "and" +(hash[target-nums[i]]-1));
+					System.out.print (i + " and " +(hash[target-nums[i]]-1));
 				}
 				hash[nums[i]]=i+1;
 
@@ -58,7 +85,7 @@ public class TwoSum {
 	
 	public static void main(String args[])
 	{
-		int[] nums = {1, 3, 4, 1, 7, 3, 7, 11, 15, 8, 16}; 
-		TwoSum twoSum = new TwoSum(nums, 8); 
+		int[] nums = {2, 7, 11, 15}; 
+		TwoSum twoSum = new TwoSum(nums, 9); 
 	}
 }

@@ -14,4 +14,20 @@ Returns: False
  */
 public class PerfectSquare {
 	
+	boolean perfectSquare(int ps)
+	{
+		for(int i = 0; i<ps; i++)
+		{
+			if(i*i == ps)
+				return true; 
+		}
+		return false; 	
+	}
+	
+	public static void main(String[] args) {
+		PerfectSquare ps = new PerfectSquare(); 
+		System.out.println(ps.perfectSquare(2));
+		System.out.println(ps.perfectSquare(4));
+	}
+	
 }

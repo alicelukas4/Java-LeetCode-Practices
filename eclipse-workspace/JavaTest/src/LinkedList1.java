@@ -1,7 +1,7 @@
 //Create a Java program to find middle node of linked list in Java in one pass? 
 
 	
-public class LinkedList {
+public class LinkedList1 {
 
 	public class Node
 	{
@@ -10,7 +10,7 @@ public class LinkedList {
 		Node(int x) { val = x; }	
 	}
 	
-	public LinkedList()
+	public LinkedList1()
 	{
 
 		int length = 0; 
@@ -63,6 +63,6 @@ public class LinkedList {
 	
 	public static void main (String args[])
 	{
-		LinkedList x = new LinkedList(); 
+		LinkedList1 x = new LinkedList1(); 
 	}
 }
